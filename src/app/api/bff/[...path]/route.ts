@@ -23,6 +23,7 @@ const ALLOWED_PREFIXES = new Set([
   "audit-logs",
   "organizations",
   "policies",
+  "channels",
 ]);
 
 const SAFE_SEGMENT = /^[A-Za-z0-9._~-]+$/;

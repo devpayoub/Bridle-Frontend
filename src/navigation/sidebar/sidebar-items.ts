@@ -8,6 +8,7 @@ import {
   MessageSquareIcon,
   MessagesSquareIcon,
   ScrollTextIcon,
+  SendIcon,
   SettingsIcon,
   ShieldCheckIcon,
   UsersIcon,
@@ -121,6 +122,13 @@ export const sidebarItems: NavGroup[] = [
         url: "/dashboard/api-keys",
         icon: KeyRoundIcon,
         capability: "apikey:read",
+      },
+      {
+        id: "channels",
+        title: "Channels",
+        url: "/dashboard/channels",
+        icon: SendIcon,
+        capability: "channel:read",
       },
       {
         id: "audit",

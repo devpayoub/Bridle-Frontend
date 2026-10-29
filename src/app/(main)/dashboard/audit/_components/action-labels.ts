@@ -21,6 +21,12 @@ export const AUDIT_ACTION_LABELS: Record<string, string> = {
   "conversation.deleted": "Conversation anonymised",
   "account.deactivated": "Account deactivated",
   "admin.access": "Administrative access",
+  "ai_settings.updated": "AI provider settings updated",
+  "ai_settings.cleared": "AI provider settings cleared",
+  "channel.connected": "Channel connected",
+  "channel.disconnected": "Channel disconnected",
+  "channel.updated": "Channel updated",
+  "channel.error": "Channel error",
 };
 
 export const AUDIT_ACTION_OPTIONS = Object.entries(AUDIT_ACTION_LABELS).map(([value, label]) => ({ value, label }));

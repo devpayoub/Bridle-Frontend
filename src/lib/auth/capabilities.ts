@@ -22,6 +22,8 @@ export const CAPABILITIES = [
   "knowledge:write",
   "apikey:read",
   "apikey:write",
+  "channel:read",
+  "channel:write",
   "conversation:read",
   "conversation:delete",
   "chat:write",
@@ -33,6 +35,7 @@ export const CAPABILITIES = [
 export type Capability = (typeof CAPABILITIES)[number];
 
 const READ_ONLY: Capability[] = [
+  "channel:read",
   "organization:read",
   "assistant:read",
   "policy:read",
@@ -50,6 +53,7 @@ const DEVELOPER: Capability[] = [
   "policy:evaluate",
   "knowledge:write",
   "apikey:write",
+  "channel:write",
   "conversation:delete",
 ];
 

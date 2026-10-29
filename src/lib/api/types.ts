@@ -519,3 +519,34 @@ export type AuditLog = {
   request_id: string;
   created_at: string;
 };
+
+// -- channels ---------------------------------------------------------------
+export type ChannelStatus = "PENDING" | "ACTIVE" | "ERROR" | "DISABLED";
+
+export type Channel = {
+  id: string;
+  type: "TELEGRAM";
+  name: string;
+  status: ChannelStatus;
+  assistant_id: string;
+  assistant_name: string;
+  bot_id: string;
+  bot_username: string;
+  has_credentials: boolean;
+  token_last4: string;
+  webhook_url: string | null;
+  webhook_registered_at: string | null;
+  webhook_error: string;
+  last_event_at: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type ChannelTestResult = {
+  ok: boolean;
+  bot_id?: string;
+  bot_username?: string;
+  latency_ms?: number;
+  error_code?: string;
+  error?: string;
+};
